@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from attention.config import opt
 
 device = torch.device('cuda:0') if opt.use_gpu else 'cpu'
+device = 'cpu'
 
 
 def gen_dataloader(data, word_dict, arg):
